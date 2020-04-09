@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
- * Copyright 2009-2015 Amazon Services. All Rights Reserved.
+ * Copyright 2009-2020 Amazon Services. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
  * You may not use this file except in compliance with the License. 
@@ -13,8 +13,8 @@
  * @category Amazon
  * @package  MWS Finances Service
  * @version  2015-05-01
- * Library Version: 2015-09-03
- * Generated: Thu Sep 03 17:55:25 GMT 2015
+ * Library Version: 2020-02-21
+ * Generated: Fri Feb 21 09:07:30 PST 2020
  */
 
 /**
@@ -30,7 +30,7 @@ class MWSFinancesService_Client implements MWSFinancesService_Interface
 {
 
     const SERVICE_VERSION = '2015-05-01';
-    const MWS_CLIENT_VERSION = '2015-09-03';
+    const MWS_CLIENT_VERSION = '2020-02-21';
 
     /** @var string */
     private  $_awsAccessKeyId = null;

@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
- * Copyright 2009-2015 Amazon Services. All Rights Reserved.
+ * Copyright 2009-2020 Amazon Services. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
  * You may not use this file except in compliance with the License. 
@@ -13,8 +13,8 @@
  * @category Amazon
  * @package  MWS Finances Service
  * @version  2015-05-01
- * Library Version: 2015-09-03
- * Generated: Thu Sep 03 17:55:25 GMT 2015
+ * Library Version: 2020-02-21
+ * Generated: Fri Feb 21 09:07:30 PST 2020
  */
 
 /**
@@ -31,6 +31,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
  * <ul>
  * 
  * <li>ShipmentEventList: array</li>
+ * <li>ShipmentSettleEventList: array</li>
  * <li>RefundEventList: array</li>
  * <li>GuaranteeClaimEventList: array</li>
  * <li>ChargebackEventList: array</li>
@@ -39,10 +40,23 @@ require_once (dirname(__FILE__) . '/../Model.php');
  * <li>RetrochargeEventList: array</li>
  * <li>RentalTransactionEventList: array</li>
  * <li>PerformanceBondRefundEventList: array</li>
+ * <li>ProductAdsPaymentEventList: array</li>
  * <li>ServiceFeeEventList: array</li>
+ * <li>SellerDealPaymentEventList: array</li>
  * <li>DebtRecoveryEventList: array</li>
  * <li>LoanServicingEventList: array</li>
  * <li>AdjustmentEventList: array</li>
+ * <li>SAFETReimbursementEventList: array</li>
+ * <li>SellerReviewEnrollmentPaymentEventList: array</li>
+ * <li>FBALiquidationEventList: array</li>
+ * <li>CouponPaymentEventList: array</li>
+ * <li>ImagingServicesFeeEventList: array</li>
+ * <li>NetworkComminglingTransactionEventList: array</li>
+ * <li>AffordabilityExpenseEventList: array</li>
+ * <li>AffordabilityExpenseReversalEventList: array</li>
+ * <li>RemovalShipmentEventList: array</li>
+ * <li>TrialShipmentEventList: array</li>
+ * <li>TDSReimbursementEventList: array</li>
  *
  * </ul>
  */
@@ -53,6 +67,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     {
     $this->_fields = array (
     'ShipmentEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_ShipmentEvent'), 'ListMemberName' => 'ShipmentEvent'),
+    'ShipmentSettleEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_ShipmentSettleEvent'), 'ListMemberName' => 'ShipmentSettleEvent'),
     'RefundEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_ShipmentEvent'), 'ListMemberName' => 'ShipmentEvent'),
     'GuaranteeClaimEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_ShipmentEvent'), 'ListMemberName' => 'ShipmentEvent'),
     'ChargebackEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_ShipmentEvent'), 'ListMemberName' => 'ShipmentEvent'),
@@ -61,10 +76,23 @@ require_once (dirname(__FILE__) . '/../Model.php');
     'RetrochargeEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_RetrochargeEvent'), 'ListMemberName' => 'RetrochargeEvent'),
     'RentalTransactionEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_RentalTransactionEvent'), 'ListMemberName' => 'RentalTransactionEvent'),
     'PerformanceBondRefundEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_PerformanceBondRefundEvent'), 'ListMemberName' => 'PerformanceBondRefundEvent'),
+    'ProductAdsPaymentEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_ProductAdsPaymentEvent'), 'ListMemberName' => 'ProductAdsPaymentEvent'),
     'ServiceFeeEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_ServiceFeeEvent'), 'ListMemberName' => 'ServiceFeeEvent'),
+    'SellerDealPaymentEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_SellerDealPaymentEvent'), 'ListMemberName' => 'SellerDealPaymentEvent'),
     'DebtRecoveryEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_DebtRecoveryEvent'), 'ListMemberName' => 'DebtRecoveryEvent'),
     'LoanServicingEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_LoanServicingEvent'), 'ListMemberName' => 'LoanServicingEvent'),
     'AdjustmentEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_AdjustmentEvent'), 'ListMemberName' => 'AdjustmentEvent'),
+    'SAFETReimbursementEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_SAFETReimbursementEvent'), 'ListMemberName' => 'SAFETReimbursementEvent'),
+    'SellerReviewEnrollmentPaymentEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_SellerReviewEnrollmentPaymentEvent'), 'ListMemberName' => 'SellerReviewEnrollmentPaymentEvent'),
+    'FBALiquidationEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_FBALiquidationEvent'), 'ListMemberName' => 'FBALiquidationEvent'),
+    'CouponPaymentEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_CouponPaymentEvent'), 'ListMemberName' => 'CouponPaymentEvent'),
+    'ImagingServicesFeeEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_ImagingServicesFeeEvent'), 'ListMemberName' => 'ImagingServicesFeeEvent'),
+    'NetworkComminglingTransactionEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_NetworkComminglingTransactionEvent'), 'ListMemberName' => 'NetworkComminglingTransactionEvent'),
+    'AffordabilityExpenseEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_AffordabilityExpenseEvent'), 'ListMemberName' => 'AffordabilityExpenseEvent'),
+    'AffordabilityExpenseReversalEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_AffordabilityExpenseEvent'), 'ListMemberName' => 'AffordabilityExpenseEvent'),
+    'RemovalShipmentEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_RemovalShipmentEvent'), 'ListMemberName' => 'RemovalShipmentEvent'),
+    'TrialShipmentEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_TrialShipmentEvent'), 'ListMemberName' => 'TrialShipmentEvent'),
+    'TDSReimbursementEventList' => array('FieldValue' => array(), 'FieldType' => array('MWSFinancesService_Model_TDSReimbursementEvent'), 'ListMemberName' => 'TDSReimbursementEvent'),
     );
     parent::__construct($data);
     }
@@ -129,6 +157,70 @@ require_once (dirname(__FILE__) . '/../Model.php');
         foreach (func_get_args() as $ShipmentEventList)
         {
             $this->_fields['ShipmentEventList']['FieldValue'][] = $ShipmentEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the ShipmentSettleEventList property.
+     *
+     * @return List<ShipmentSettleEvent> ShipmentSettleEventList.
+     */
+    public function getShipmentSettleEventList()
+    {
+        if ($this->_fields['ShipmentSettleEventList']['FieldValue'] == null)
+        {
+            $this->_fields['ShipmentSettleEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['ShipmentSettleEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the ShipmentSettleEventList property.
+     *
+     * @param array shipmentSettleEventList
+     * @return this instance
+     */
+    public function setShipmentSettleEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['ShipmentSettleEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear ShipmentSettleEventList.
+     */
+    public function unsetShipmentSettleEventList()
+    {
+        $this->_fields['ShipmentSettleEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if ShipmentSettleEventList is set.
+     *
+     * @return true if ShipmentSettleEventList is set.
+     */
+    public function isSetShipmentSettleEventList()
+    {
+                return !empty($this->_fields['ShipmentSettleEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for ShipmentSettleEventList, return this.
+     *
+     * @param shipmentSettleEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withShipmentSettleEventList()
+    {
+        foreach (func_get_args() as $ShipmentSettleEventList)
+        {
+            $this->_fields['ShipmentSettleEventList']['FieldValue'][] = $ShipmentSettleEventList;
         }
         return $this;
     }
@@ -646,6 +738,70 @@ require_once (dirname(__FILE__) . '/../Model.php');
     }
 
     /**
+     * Get the value of the ProductAdsPaymentEventList property.
+     *
+     * @return List<ProductAdsPaymentEvent> ProductAdsPaymentEventList.
+     */
+    public function getProductAdsPaymentEventList()
+    {
+        if ($this->_fields['ProductAdsPaymentEventList']['FieldValue'] == null)
+        {
+            $this->_fields['ProductAdsPaymentEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['ProductAdsPaymentEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the ProductAdsPaymentEventList property.
+     *
+     * @param array productAdsPaymentEventList
+     * @return this instance
+     */
+    public function setProductAdsPaymentEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['ProductAdsPaymentEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear ProductAdsPaymentEventList.
+     */
+    public function unsetProductAdsPaymentEventList()
+    {
+        $this->_fields['ProductAdsPaymentEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if ProductAdsPaymentEventList is set.
+     *
+     * @return true if ProductAdsPaymentEventList is set.
+     */
+    public function isSetProductAdsPaymentEventList()
+    {
+                return !empty($this->_fields['ProductAdsPaymentEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for ProductAdsPaymentEventList, return this.
+     *
+     * @param productAdsPaymentEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withProductAdsPaymentEventList()
+    {
+        foreach (func_get_args() as $ProductAdsPaymentEventList)
+        {
+            $this->_fields['ProductAdsPaymentEventList']['FieldValue'][] = $ProductAdsPaymentEventList;
+        }
+        return $this;
+    }
+
+    /**
      * Get the value of the ServiceFeeEventList property.
      *
      * @return List<ServiceFeeEvent> ServiceFeeEventList.
@@ -705,6 +861,70 @@ require_once (dirname(__FILE__) . '/../Model.php');
         foreach (func_get_args() as $ServiceFeeEventList)
         {
             $this->_fields['ServiceFeeEventList']['FieldValue'][] = $ServiceFeeEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the SellerDealPaymentEventList property.
+     *
+     * @return List<SellerDealPaymentEvent> SellerDealPaymentEventList.
+     */
+    public function getSellerDealPaymentEventList()
+    {
+        if ($this->_fields['SellerDealPaymentEventList']['FieldValue'] == null)
+        {
+            $this->_fields['SellerDealPaymentEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['SellerDealPaymentEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the SellerDealPaymentEventList property.
+     *
+     * @param array sellerDealPaymentEventList
+     * @return this instance
+     */
+    public function setSellerDealPaymentEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['SellerDealPaymentEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear SellerDealPaymentEventList.
+     */
+    public function unsetSellerDealPaymentEventList()
+    {
+        $this->_fields['SellerDealPaymentEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if SellerDealPaymentEventList is set.
+     *
+     * @return true if SellerDealPaymentEventList is set.
+     */
+    public function isSetSellerDealPaymentEventList()
+    {
+                return !empty($this->_fields['SellerDealPaymentEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for SellerDealPaymentEventList, return this.
+     *
+     * @param sellerDealPaymentEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withSellerDealPaymentEventList()
+    {
+        foreach (func_get_args() as $SellerDealPaymentEventList)
+        {
+            $this->_fields['SellerDealPaymentEventList']['FieldValue'][] = $SellerDealPaymentEventList;
         }
         return $this;
     }
@@ -897,6 +1117,710 @@ require_once (dirname(__FILE__) . '/../Model.php');
         foreach (func_get_args() as $AdjustmentEventList)
         {
             $this->_fields['AdjustmentEventList']['FieldValue'][] = $AdjustmentEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the SAFETReimbursementEventList property.
+     *
+     * @return List<SAFETReimbursementEvent> SAFETReimbursementEventList.
+     */
+    public function getSAFETReimbursementEventList()
+    {
+        if ($this->_fields['SAFETReimbursementEventList']['FieldValue'] == null)
+        {
+            $this->_fields['SAFETReimbursementEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['SAFETReimbursementEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the SAFETReimbursementEventList property.
+     *
+     * @param array safetReimbursementEventList
+     * @return this instance
+     */
+    public function setSAFETReimbursementEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['SAFETReimbursementEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear SAFETReimbursementEventList.
+     */
+    public function unsetSAFETReimbursementEventList()
+    {
+        $this->_fields['SAFETReimbursementEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if SAFETReimbursementEventList is set.
+     *
+     * @return true if SAFETReimbursementEventList is set.
+     */
+    public function isSetSAFETReimbursementEventList()
+    {
+                return !empty($this->_fields['SAFETReimbursementEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for SAFETReimbursementEventList, return this.
+     *
+     * @param safetReimbursementEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withSAFETReimbursementEventList()
+    {
+        foreach (func_get_args() as $SAFETReimbursementEventList)
+        {
+            $this->_fields['SAFETReimbursementEventList']['FieldValue'][] = $SAFETReimbursementEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the SellerReviewEnrollmentPaymentEventList property.
+     *
+     * @return List<SellerReviewEnrollmentPaymentEvent> SellerReviewEnrollmentPaymentEventList.
+     */
+    public function getSellerReviewEnrollmentPaymentEventList()
+    {
+        if ($this->_fields['SellerReviewEnrollmentPaymentEventList']['FieldValue'] == null)
+        {
+            $this->_fields['SellerReviewEnrollmentPaymentEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['SellerReviewEnrollmentPaymentEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the SellerReviewEnrollmentPaymentEventList property.
+     *
+     * @param array sellerReviewEnrollmentPaymentEventList
+     * @return this instance
+     */
+    public function setSellerReviewEnrollmentPaymentEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['SellerReviewEnrollmentPaymentEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear SellerReviewEnrollmentPaymentEventList.
+     */
+    public function unsetSellerReviewEnrollmentPaymentEventList()
+    {
+        $this->_fields['SellerReviewEnrollmentPaymentEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if SellerReviewEnrollmentPaymentEventList is set.
+     *
+     * @return true if SellerReviewEnrollmentPaymentEventList is set.
+     */
+    public function isSetSellerReviewEnrollmentPaymentEventList()
+    {
+                return !empty($this->_fields['SellerReviewEnrollmentPaymentEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for SellerReviewEnrollmentPaymentEventList, return this.
+     *
+     * @param sellerReviewEnrollmentPaymentEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withSellerReviewEnrollmentPaymentEventList()
+    {
+        foreach (func_get_args() as $SellerReviewEnrollmentPaymentEventList)
+        {
+            $this->_fields['SellerReviewEnrollmentPaymentEventList']['FieldValue'][] = $SellerReviewEnrollmentPaymentEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the FBALiquidationEventList property.
+     *
+     * @return List<FBALiquidationEvent> FBALiquidationEventList.
+     */
+    public function getFBALiquidationEventList()
+    {
+        if ($this->_fields['FBALiquidationEventList']['FieldValue'] == null)
+        {
+            $this->_fields['FBALiquidationEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['FBALiquidationEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the FBALiquidationEventList property.
+     *
+     * @param array fbaLiquidationEventList
+     * @return this instance
+     */
+    public function setFBALiquidationEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['FBALiquidationEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear FBALiquidationEventList.
+     */
+    public function unsetFBALiquidationEventList()
+    {
+        $this->_fields['FBALiquidationEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if FBALiquidationEventList is set.
+     *
+     * @return true if FBALiquidationEventList is set.
+     */
+    public function isSetFBALiquidationEventList()
+    {
+                return !empty($this->_fields['FBALiquidationEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for FBALiquidationEventList, return this.
+     *
+     * @param fbaLiquidationEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withFBALiquidationEventList()
+    {
+        foreach (func_get_args() as $FBALiquidationEventList)
+        {
+            $this->_fields['FBALiquidationEventList']['FieldValue'][] = $FBALiquidationEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the CouponPaymentEventList property.
+     *
+     * @return List<CouponPaymentEvent> CouponPaymentEventList.
+     */
+    public function getCouponPaymentEventList()
+    {
+        if ($this->_fields['CouponPaymentEventList']['FieldValue'] == null)
+        {
+            $this->_fields['CouponPaymentEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['CouponPaymentEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the CouponPaymentEventList property.
+     *
+     * @param array couponPaymentEventList
+     * @return this instance
+     */
+    public function setCouponPaymentEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['CouponPaymentEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear CouponPaymentEventList.
+     */
+    public function unsetCouponPaymentEventList()
+    {
+        $this->_fields['CouponPaymentEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if CouponPaymentEventList is set.
+     *
+     * @return true if CouponPaymentEventList is set.
+     */
+    public function isSetCouponPaymentEventList()
+    {
+                return !empty($this->_fields['CouponPaymentEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for CouponPaymentEventList, return this.
+     *
+     * @param couponPaymentEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withCouponPaymentEventList()
+    {
+        foreach (func_get_args() as $CouponPaymentEventList)
+        {
+            $this->_fields['CouponPaymentEventList']['FieldValue'][] = $CouponPaymentEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the ImagingServicesFeeEventList property.
+     *
+     * @return List<ImagingServicesFeeEvent> ImagingServicesFeeEventList.
+     */
+    public function getImagingServicesFeeEventList()
+    {
+        if ($this->_fields['ImagingServicesFeeEventList']['FieldValue'] == null)
+        {
+            $this->_fields['ImagingServicesFeeEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['ImagingServicesFeeEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the ImagingServicesFeeEventList property.
+     *
+     * @param array imagingServicesFeeEventList
+     * @return this instance
+     */
+    public function setImagingServicesFeeEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['ImagingServicesFeeEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear ImagingServicesFeeEventList.
+     */
+    public function unsetImagingServicesFeeEventList()
+    {
+        $this->_fields['ImagingServicesFeeEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if ImagingServicesFeeEventList is set.
+     *
+     * @return true if ImagingServicesFeeEventList is set.
+     */
+    public function isSetImagingServicesFeeEventList()
+    {
+                return !empty($this->_fields['ImagingServicesFeeEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for ImagingServicesFeeEventList, return this.
+     *
+     * @param imagingServicesFeeEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withImagingServicesFeeEventList()
+    {
+        foreach (func_get_args() as $ImagingServicesFeeEventList)
+        {
+            $this->_fields['ImagingServicesFeeEventList']['FieldValue'][] = $ImagingServicesFeeEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the NetworkComminglingTransactionEventList property.
+     *
+     * @return List<NetworkComminglingTransactionEvent> NetworkComminglingTransactionEventList.
+     */
+    public function getNetworkComminglingTransactionEventList()
+    {
+        if ($this->_fields['NetworkComminglingTransactionEventList']['FieldValue'] == null)
+        {
+            $this->_fields['NetworkComminglingTransactionEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['NetworkComminglingTransactionEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the NetworkComminglingTransactionEventList property.
+     *
+     * @param array networkComminglingTransactionEventList
+     * @return this instance
+     */
+    public function setNetworkComminglingTransactionEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['NetworkComminglingTransactionEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear NetworkComminglingTransactionEventList.
+     */
+    public function unsetNetworkComminglingTransactionEventList()
+    {
+        $this->_fields['NetworkComminglingTransactionEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if NetworkComminglingTransactionEventList is set.
+     *
+     * @return true if NetworkComminglingTransactionEventList is set.
+     */
+    public function isSetNetworkComminglingTransactionEventList()
+    {
+                return !empty($this->_fields['NetworkComminglingTransactionEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for NetworkComminglingTransactionEventList, return this.
+     *
+     * @param networkComminglingTransactionEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withNetworkComminglingTransactionEventList()
+    {
+        foreach (func_get_args() as $NetworkComminglingTransactionEventList)
+        {
+            $this->_fields['NetworkComminglingTransactionEventList']['FieldValue'][] = $NetworkComminglingTransactionEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the AffordabilityExpenseEventList property.
+     *
+     * @return List<AffordabilityExpenseEvent> AffordabilityExpenseEventList.
+     */
+    public function getAffordabilityExpenseEventList()
+    {
+        if ($this->_fields['AffordabilityExpenseEventList']['FieldValue'] == null)
+        {
+            $this->_fields['AffordabilityExpenseEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['AffordabilityExpenseEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the AffordabilityExpenseEventList property.
+     *
+     * @param array affordabilityExpenseEventList
+     * @return this instance
+     */
+    public function setAffordabilityExpenseEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['AffordabilityExpenseEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear AffordabilityExpenseEventList.
+     */
+    public function unsetAffordabilityExpenseEventList()
+    {
+        $this->_fields['AffordabilityExpenseEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if AffordabilityExpenseEventList is set.
+     *
+     * @return true if AffordabilityExpenseEventList is set.
+     */
+    public function isSetAffordabilityExpenseEventList()
+    {
+                return !empty($this->_fields['AffordabilityExpenseEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for AffordabilityExpenseEventList, return this.
+     *
+     * @param affordabilityExpenseEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withAffordabilityExpenseEventList()
+    {
+        foreach (func_get_args() as $AffordabilityExpenseEventList)
+        {
+            $this->_fields['AffordabilityExpenseEventList']['FieldValue'][] = $AffordabilityExpenseEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the AffordabilityExpenseReversalEventList property.
+     *
+     * @return List<AffordabilityExpenseEvent> AffordabilityExpenseReversalEventList.
+     */
+    public function getAffordabilityExpenseReversalEventList()
+    {
+        if ($this->_fields['AffordabilityExpenseReversalEventList']['FieldValue'] == null)
+        {
+            $this->_fields['AffordabilityExpenseReversalEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['AffordabilityExpenseReversalEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the AffordabilityExpenseReversalEventList property.
+     *
+     * @param array affordabilityExpenseReversalEventList
+     * @return this instance
+     */
+    public function setAffordabilityExpenseReversalEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['AffordabilityExpenseReversalEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear AffordabilityExpenseReversalEventList.
+     */
+    public function unsetAffordabilityExpenseReversalEventList()
+    {
+        $this->_fields['AffordabilityExpenseReversalEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if AffordabilityExpenseReversalEventList is set.
+     *
+     * @return true if AffordabilityExpenseReversalEventList is set.
+     */
+    public function isSetAffordabilityExpenseReversalEventList()
+    {
+                return !empty($this->_fields['AffordabilityExpenseReversalEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for AffordabilityExpenseReversalEventList, return this.
+     *
+     * @param affordabilityExpenseReversalEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withAffordabilityExpenseReversalEventList()
+    {
+        foreach (func_get_args() as $AffordabilityExpenseReversalEventList)
+        {
+            $this->_fields['AffordabilityExpenseReversalEventList']['FieldValue'][] = $AffordabilityExpenseReversalEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the RemovalShipmentEventList property.
+     *
+     * @return List<RemovalShipmentEvent> RemovalShipmentEventList.
+     */
+    public function getRemovalShipmentEventList()
+    {
+        if ($this->_fields['RemovalShipmentEventList']['FieldValue'] == null)
+        {
+            $this->_fields['RemovalShipmentEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['RemovalShipmentEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the RemovalShipmentEventList property.
+     *
+     * @param array removalShipmentEventList
+     * @return this instance
+     */
+    public function setRemovalShipmentEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['RemovalShipmentEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear RemovalShipmentEventList.
+     */
+    public function unsetRemovalShipmentEventList()
+    {
+        $this->_fields['RemovalShipmentEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if RemovalShipmentEventList is set.
+     *
+     * @return true if RemovalShipmentEventList is set.
+     */
+    public function isSetRemovalShipmentEventList()
+    {
+                return !empty($this->_fields['RemovalShipmentEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for RemovalShipmentEventList, return this.
+     *
+     * @param removalShipmentEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withRemovalShipmentEventList()
+    {
+        foreach (func_get_args() as $RemovalShipmentEventList)
+        {
+            $this->_fields['RemovalShipmentEventList']['FieldValue'][] = $RemovalShipmentEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the TrialShipmentEventList property.
+     *
+     * @return List<TrialShipmentEvent> TrialShipmentEventList.
+     */
+    public function getTrialShipmentEventList()
+    {
+        if ($this->_fields['TrialShipmentEventList']['FieldValue'] == null)
+        {
+            $this->_fields['TrialShipmentEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['TrialShipmentEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the TrialShipmentEventList property.
+     *
+     * @param array trialShipmentEventList
+     * @return this instance
+     */
+    public function setTrialShipmentEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['TrialShipmentEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear TrialShipmentEventList.
+     */
+    public function unsetTrialShipmentEventList()
+    {
+        $this->_fields['TrialShipmentEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if TrialShipmentEventList is set.
+     *
+     * @return true if TrialShipmentEventList is set.
+     */
+    public function isSetTrialShipmentEventList()
+    {
+                return !empty($this->_fields['TrialShipmentEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for TrialShipmentEventList, return this.
+     *
+     * @param trialShipmentEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withTrialShipmentEventList()
+    {
+        foreach (func_get_args() as $TrialShipmentEventList)
+        {
+            $this->_fields['TrialShipmentEventList']['FieldValue'][] = $TrialShipmentEventList;
+        }
+        return $this;
+    }
+
+    /**
+     * Get the value of the TDSReimbursementEventList property.
+     *
+     * @return List<TDSReimbursementEvent> TDSReimbursementEventList.
+     */
+    public function getTDSReimbursementEventList()
+    {
+        if ($this->_fields['TDSReimbursementEventList']['FieldValue'] == null)
+        {
+            $this->_fields['TDSReimbursementEventList']['FieldValue'] = array();
+        }
+        return $this->_fields['TDSReimbursementEventList']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the TDSReimbursementEventList property.
+     *
+     * @param array tdsReimbursementEventList
+     * @return this instance
+     */
+    public function setTDSReimbursementEventList($value)
+    {
+        if (!$this->_isNumericArray($value)) {
+            $value = array ($value);
+        }
+        $this->_fields['TDSReimbursementEventList']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Clear TDSReimbursementEventList.
+     */
+    public function unsetTDSReimbursementEventList()
+    {
+        $this->_fields['TDSReimbursementEventList']['FieldValue'] = array();
+    }
+
+    /**
+     * Check to see if TDSReimbursementEventList is set.
+     *
+     * @return true if TDSReimbursementEventList is set.
+     */
+    public function isSetTDSReimbursementEventList()
+    {
+                return !empty($this->_fields['TDSReimbursementEventList']['FieldValue']);
+            }
+
+    /**
+     * Add values for TDSReimbursementEventList, return this.
+     *
+     * @param tdsReimbursementEventList
+     *             New values to add.
+     *
+     * @return This instance.
+     */
+    public function withTDSReimbursementEventList()
+    {
+        foreach (func_get_args() as $TDSReimbursementEventList)
+        {
+            $this->_fields['TDSReimbursementEventList']['FieldValue'][] = $TDSReimbursementEventList;
         }
         return $this;
     }

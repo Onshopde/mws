@@ -1,26 +1,34 @@
 <?php
-/**
+/** 
  *  PHP Version 5
  *
- * @category    Amazon
- * @package     MarketplaceWebService
- * @copyright   Copyright 2009 Amazon Technologies, Inc.
- * @link        http://aws.amazon.com
- * @license     http://aws.amazon.com/apache2.0  Apache License, Version 2.0
- * @version     2009-01-01
+ *  @category    Amazon
+ *  @package     MarketplaceWebService
+ *  @copyright   Copyright 2009 Amazon Technologies, Inc.
+ *  @link        http://aws.amazon.com
+ *  @license     http://aws.amazon.com/apache2.0  Apache License, Version 2.0
+ *  @version     2009-01-01
  */
-/*******************************************************************************
+/******************************************************************************* 
+
  *  Marketplace Web Service PHP5 Library
  *  Generated: Thu May 07 13:07:36 PDT 2009
- *
+ * 
  */
 
 /**
+ *  @see MarketplaceWebService_Model
+ */
+require_once ('MarketplaceWebService/Model.php');  
+
+    
+
+/**
  * MarketplaceWebService_Model_FeedSubmissionInfo
- *
+ * 
  * Properties:
  * <ul>
- *
+ * 
  * <li>FeedSubmissionId: string</li>
  * <li>FeedType: string</li>
  * <li>SubmittedDate: string</li>
@@ -29,19 +37,19 @@
  * <li>CompletedProcessingDate: string</li>
  *
  * </ul>
- */
+ */ 
 class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebService_Model
 {
 
 
     /**
      * Construct new MarketplaceWebService_Model_FeedSubmissionInfo
-     *
-     * @param mixed $data DOMElement or Associative Array to construct from.
-     *
+     * 
+     * @param mixed $data DOMElement or Associative Array to construct from. 
+     * 
      * Valid properties:
      * <ul>
-     *
+     * 
      * <li>FeedSubmissionId: string</li>
      * <li>FeedType: string</li>
      * <li>SubmittedDate: string</li>
@@ -53,34 +61,34 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
      */
     public function __construct($data = null)
     {
-        $this->fields = array(
-            'FeedSubmissionId' => array('FieldValue' => null, 'FieldType' => 'string'),
-            'FeedType' => array('FieldValue' => null, 'FieldType' => 'string'),
-            'SubmittedDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
-            'FeedProcessingStatus' => array('FieldValue' => null, 'FieldType' => 'string'),
-            'StartedProcessingDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
-            'CompletedProcessingDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
+        $this->fields = array (
+        'FeedSubmissionId' => array('FieldValue' => null, 'FieldType' => 'string'),
+        'FeedType' => array('FieldValue' => null, 'FieldType' => 'string'),
+        'SubmittedDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
+        'FeedProcessingStatus' => array('FieldValue' => null, 'FieldType' => 'string'),
+        'StartedProcessingDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
+        'CompletedProcessingDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
         );
         parent::__construct($data);
     }
 
-    /**
+        /**
      * Gets the value of the FeedSubmissionId property.
-     *
+     * 
      * @return string FeedSubmissionId
      */
-    public function getFeedSubmissionId()
+    public function getFeedSubmissionId() 
     {
         return $this->fields['FeedSubmissionId']['FieldValue'];
     }
 
     /**
      * Sets the value of the FeedSubmissionId property.
-     *
-     * @param string $value FeedSubmissionId
-     * @return $this This instance
+     * 
+     * @param string FeedSubmissionId
+     * @return this instance
      */
-    public function setFeedSubmissionId($value)
+    public function setFeedSubmissionId($value) 
     {
         $this->fields['FeedSubmissionId']['FieldValue'] = $value;
         return $this;
@@ -88,7 +96,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Sets the value of the FeedSubmissionId and returns this instance
-     *
+     * 
      * @param string $value FeedSubmissionId
      * @return MarketplaceWebService_Model_FeedSubmissionInfo instance
      */
@@ -101,7 +109,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Checks if FeedSubmissionId is set
-     *
+     * 
      * @return bool true if FeedSubmissionId  is set
      */
     public function isSetFeedSubmissionId()
@@ -111,21 +119,21 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Gets the value of the FeedType property.
-     *
+     * 
      * @return string FeedType
      */
-    public function getFeedType()
+    public function getFeedType() 
     {
         return $this->fields['FeedType']['FieldValue'];
     }
 
     /**
      * Sets the value of the FeedType property.
-     *
-     * @param string $value FeedType
-     * @return $this This instance
+     * 
+     * @param string FeedType
+     * @return this instance
      */
-    public function setFeedType($value)
+    public function setFeedType($value) 
     {
         $this->fields['FeedType']['FieldValue'] = $value;
         return $this;
@@ -133,7 +141,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Sets the value of the FeedType and returns this instance
-     *
+     * 
      * @param string $value FeedType
      * @return MarketplaceWebService_Model_FeedSubmissionInfo instance
      */
@@ -146,7 +154,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Checks if FeedType is set
-     *
+     * 
      * @return bool true if FeedType  is set
      */
     public function isSetFeedType()
@@ -156,21 +164,21 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Gets the value of the SubmittedDate property.
-     *
+     * 
      * @return string SubmittedDate
      */
-    public function getSubmittedDate()
+    public function getSubmittedDate() 
     {
         return $this->fields['SubmittedDate']['FieldValue'];
     }
 
     /**
      * Sets the value of the SubmittedDate property.
-     *
-     * @param string $value SubmittedDate
-     * @return $this This instance
+     * 
+     * @param string SubmittedDate
+     * @return this instance
      */
-    public function setSubmittedDate($value)
+    public function setSubmittedDate($value) 
     {
         $this->fields['SubmittedDate']['FieldValue'] = $value;
         return $this;
@@ -178,7 +186,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Sets the value of the SubmittedDate and returns this instance
-     *
+     * 
      * @param string $value SubmittedDate
      * @return MarketplaceWebService_Model_FeedSubmissionInfo instance
      */
@@ -191,7 +199,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Checks if SubmittedDate is set
-     *
+     * 
      * @return bool true if SubmittedDate  is set
      */
     public function isSetSubmittedDate()
@@ -201,21 +209,21 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Gets the value of the FeedProcessingStatus property.
-     *
+     * 
      * @return string FeedProcessingStatus
      */
-    public function getFeedProcessingStatus()
+    public function getFeedProcessingStatus() 
     {
         return $this->fields['FeedProcessingStatus']['FieldValue'];
     }
 
     /**
      * Sets the value of the FeedProcessingStatus property.
-     *
-     * @param string $value FeedProcessingStatus
-     * @return $this This instance
+     * 
+     * @param string FeedProcessingStatus
+     * @return this instance
      */
-    public function setFeedProcessingStatus($value)
+    public function setFeedProcessingStatus($value) 
     {
         $this->fields['FeedProcessingStatus']['FieldValue'] = $value;
         return $this;
@@ -223,7 +231,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Sets the value of the FeedProcessingStatus and returns this instance
-     *
+     * 
      * @param string $value FeedProcessingStatus
      * @return MarketplaceWebService_Model_FeedSubmissionInfo instance
      */
@@ -236,7 +244,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Checks if FeedProcessingStatus is set
-     *
+     * 
      * @return bool true if FeedProcessingStatus  is set
      */
     public function isSetFeedProcessingStatus()
@@ -246,21 +254,21 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Gets the value of the StartedProcessingDate property.
-     *
+     * 
      * @return string StartedProcessingDate
      */
-    public function getStartedProcessingDate()
+    public function getStartedProcessingDate() 
     {
         return $this->fields['StartedProcessingDate']['FieldValue'];
     }
 
     /**
      * Sets the value of the StartedProcessingDate property.
-     *
-     * @param string $value StartedProcessingDate
-     * @return $this This instance
+     * 
+     * @param string StartedProcessingDate
+     * @return this instance
      */
-    public function setStartedProcessingDate($value)
+    public function setStartedProcessingDate($value) 
     {
         $this->fields['StartedProcessingDate']['FieldValue'] = $value;
         return $this;
@@ -268,7 +276,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Sets the value of the StartedProcessingDate and returns this instance
-     *
+     * 
      * @param string $value StartedProcessingDate
      * @return MarketplaceWebService_Model_FeedSubmissionInfo instance
      */
@@ -281,7 +289,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Checks if StartedProcessingDate is set
-     *
+     * 
      * @return bool true if StartedProcessingDate  is set
      */
     public function isSetStartedProcessingDate()
@@ -291,21 +299,21 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Gets the value of the CompletedProcessingDate property.
-     *
+     * 
      * @return string CompletedProcessingDate
      */
-    public function getCompletedProcessingDate()
+    public function getCompletedProcessingDate() 
     {
         return $this->fields['CompletedProcessingDate']['FieldValue'];
     }
 
     /**
      * Sets the value of the CompletedProcessingDate property.
-     *
-     * @param string $value CompletedProcessingDate
-     * @return $this This instance
+     * 
+     * @param string CompletedProcessingDate
+     * @return this instance
      */
-    public function setCompletedProcessingDate($value)
+    public function setCompletedProcessingDate($value) 
     {
         $this->fields['CompletedProcessingDate']['FieldValue'] = $value;
         return $this;
@@ -313,7 +321,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Sets the value of the CompletedProcessingDate and returns this instance
-     *
+     * 
      * @param string $value CompletedProcessingDate
      * @return MarketplaceWebService_Model_FeedSubmissionInfo instance
      */
@@ -326,13 +334,15 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
 
     /**
      * Checks if CompletedProcessingDate is set
-     *
+     * 
      * @return bool true if CompletedProcessingDate  is set
      */
     public function isSetCompletedProcessingDate()
     {
         return !is_null($this->fields['CompletedProcessingDate']['FieldValue']);
     }
+
+
 
 
 }
